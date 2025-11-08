@@ -54,7 +54,7 @@ export default function Services({ language }: { language: "en" | "ar" }) {
               className="group p-8 bg-card border border-border/30 rounded-2xl hover:border-emerald-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10 cursor-pointer"
             >
               <div className="mb-6 inline-block p-3 bg-emerald-500/10 rounded-xl group-hover:bg-emerald-500/20 transition-colors">
-                <service.icon className="w-6 h-6 text-emerald-500 group-hover:text-accent transition-colors" />
+                <service.icon className="w-6 h-6 text-emerald-500 group-hover:text-emerald-600 transition-colors" />
               </div>
               <h3 className={`text-xl font-bold text-foreground mb-3 ${isRTL ? "text-right" : ""}`}>
                 {t[service.key as keyof typeof t]}
