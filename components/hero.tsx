@@ -55,7 +55,7 @@ export default function Hero({ language }: { language: "en" | "ar" }) {
         <div
           className={`flex flex-col sm:flex-row gap-4 justify-center items-center ${isRTL ? "flex-row-reverse" : ""}`}
         >
-          <button className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-green-500 text-emerald-100  rounded-full font-semibold hover:shadow-xl hover:shadow-emerald-500/40 transition-all duration-300 group">
+          <button className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-orange-500 text-emerald-100  rounded-full font-semibold hover:shadow-xl hover:shadow-emerald-500/40 transition-all duration-300 group">
             {t.start_project}
           </button>
           <button className="px-8 py-4 border-2 border-emerald-500/30 text-foreground rounded-full font-semibold hover:border-emerald-500 hover:bg-emerald-500/5 transition-all duration-300">

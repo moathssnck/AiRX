@@ -95,7 +95,7 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-teal-500 via-accent to-green-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-teal-500 via-orange-500 to-green-500 bg-clip-text text-transparent;
     animation: gradientShift 6s ease infinite;
     background-size: 200% 200%;
   }

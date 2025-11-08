@@ -71,7 +71,7 @@ export default function Header({
             <span className="text-sm font-medium">{language === "en" ? "العربية" : "EN"}</span>
           </button>
 
-          <button className="px-6 py-2.5 bg-gradient-to-r from-emerald-500 to-accent text-emerald-500-foreground rounded-full font-semibold hover:shadow-lg hover:shadow-emerald-500/30 transition-all duration-300 flex items-center gap-2">
+          <button className="px-6 py-2.5 bg-gradient-to-r from-emerald-500 to-otange-500 text-emerald-500-foreground rounded-full font-semibold hover:shadow-lg hover:shadow-emerald-500/30 transition-all duration-300 flex items-center gap-2">
             {t.get_started}
             <ArrowRight size={16} />
           </button>
@@ -109,7 +109,7 @@ export default function Header({
               <a href="#contact" className="text-foreground hover:text-emerald-500 text-sm font-medium">
                 {t.contact}
               </a>
-              <button className="px-6 py-2 bg-gradient-to-r from-emerald-500 to-accent text-emerald-500-foreground rounded-full font-medium w-full text-sm">
+              <button className="px-6 py-2 bg-gradient-to-r from-emerald-500 to-otange-500 text-emerald-500-foreground rounded-full font-medium w-full text-sm">
                 {t.get_started}
               </button>
             </div>
