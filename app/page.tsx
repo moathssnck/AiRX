@@ -13,7 +13,7 @@ import CTA from "@/components/cta"
 import Footer from "@/components/footer"
 
 export default function Home() {
-  const [language, setLanguage] = useState<"en" | "ar">("en")
+  const [language, setLanguage] = useState<"en" | "ar">("ar")
 
   return (
     <main className="w-full" dir={language === "ar" ? "rtl" : "ltr"}>

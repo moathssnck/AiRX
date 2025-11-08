@@ -97,7 +97,7 @@ export default function Pricing({ language }: { language: "en" | "ar" }) {
               }`}
             >
               {plan.popular && (
-                <div className="mb-4 inline-block px-3 py-1 bg-accent/20 text-accent text-xs font-semibold rounded-full">
+                <div className="mb-4 inline-block px-3 py-1 bg-teal-600/50 text-white text-xs  rounded-full">
                   {language === "en" ? "Most Popular" : "الأكثر شهرة"}
                 </div>
               )}
@@ -110,8 +110,8 @@ export default function Pricing({ language }: { language: "en" | "ar" }) {
               <button
                 className={`w-full py-2 rounded-full font-medium mb-8 transition-all ${
                   plan.popular
-                    ? "bg-accent text-background hover:opacity-90"
-                    : "bg-card border border-border text-foreground hover:border-accent"
+                    ? "bg-teal-600 text-white hover:opacity-90"
+                    : "bg-card border border-border text-foreground hover:border-teal-500"
                 }`}
               >
                 {t.choose_plan}
@@ -119,7 +119,7 @@ export default function Pricing({ language }: { language: "en" | "ar" }) {
               <ul className="space-y-4">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-3 text-sm text-foreground">
-                    <span className="text-accent">✓</span>
+                    <span className="text-teal-500">✓</span>
                     {feature}
                   </li>
                 ))}

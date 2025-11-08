@@ -1,3 +1,5 @@
+import { Github } from "lucide-react"
+
 const translations = {
   en: {
     tagline: "Next-Generation AI Solutions",
@@ -15,7 +17,7 @@ const translations = {
       "نحن متخصصون في بناء نماذج ذكاء اصطناعي مخصصة باستخدام بيانات ورؤاك الفريدة. من توليد السيناريوهات وتصميم تدفقات العمليات إلى الأتمتة المتقدمة، نقدم حلول ذكاء اصطناعي تناسب أهدافك المحددة.",
     start_project: "ابدأ مشروعك",
     watch_demo: "مشاهدة العرض التوضيحي",
-    trusted_by: "موثوق به من قبل المنظمات العالمية الرائدة",
+    trusted_by: "موثوق به من قبل الشركات العالمية الرائدة",
   },
 }
 
@@ -35,7 +37,7 @@ export default function Hero({ language }: { language: "en" | "ar" }) {
 
       <div className="max-w-5xl mx-auto text-center">
         <div className="mb-8">
-          <p className="text-emerald-500 text-sm font-bold tracking-widest uppercase inline-block px-4 py-2 bg-emerald-500/10 rounded-full">
+          <p className="text-emerald-500 text-sm  uppercase inline-block px-4 py-2 bg-emerald-500/10 rounded-full">
             {t.tagline}
           </p>
         </div>
@@ -55,10 +57,10 @@ export default function Hero({ language }: { language: "en" | "ar" }) {
         <div
           className={`flex flex-col sm:flex-row gap-4 justify-center items-center ${isRTL ? "flex-row-reverse" : ""}`}
         >
-          <button className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-orange-500 text-emerald-100  rounded-full font-semibold hover:shadow-xl hover:shadow-emerald-500/40 transition-all duration-300 group">
+          <button className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-gray-300 text-emerald-900  rounded-full font-semibold hover:shadow-xl hover:shadow-emerald-500/40 transition-all duration-300 group">
             {t.start_project}
           </button>
-          <button className="px-8 py-4 border-2 border-emerald-500/30 text-foreground rounded-full font-semibold hover:border-emerald-500 hover:bg-emerald-500/5 transition-all duration-300">
+          <button className="px-8 py-3 border-2 border-emerald-500/30 text-foreground rounded-full font-semibold hover:border-emerald-500 hover:bg-emerald-500/5 transition-all duration-300">
             {t.watch_demo}
           </button>
         </div>
@@ -68,8 +70,8 @@ export default function Hero({ language }: { language: "en" | "ar" }) {
           <div
             className={`grid grid-cols-2 sm:grid-cols-4 gap-8 items-center justify-items-center ${isRTL ? "flex-row-reverse" : ""}`}
           >
-            {[...Array(4)].map((_, i) => (
-              <div key={i} className="h-10 bg-gradient-to-r from-emerald-500/20 to-accent-400/20 rounded-lg w-28 shimmer"></div>
+            {[<Github/>].map((item, i) => (
+              <div key={i} className="h-10 bg-gradient-to-r from-emerald-500/20 to-accent-400/20 rounded-lg w-10 shimmer flex justify-center items-center">{item}</div>
             ))}
           </div>
         </div>

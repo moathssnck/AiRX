@@ -46,8 +46,8 @@ export default function Process({ language }: { language: "en" | "ar" }) {
         <div className="grid md:grid-cols-4 gap-4">
           {steps.map((step, idx) => (
             <div key={idx} className="relative">
-              <div className="p-6 bg-background border border-border rounded-lg hover:border-teal-500/50 transition-all h-full">
-                <div className="text-4xl font-bold text-accent/20 mb-4">{step.num}</div>
+              <div className="p-6 bg-background border text-accent/20 hover:text-teal-600 cursor-pointer border-border rounded-lg hover:border-teal-500/50 transition-all h-full">
+                <div className="text-4xl font-bold  mb-4">{step.num}</div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">{step.title}</h3>
                 <p className="text-sm text-muted-foreground">{step.desc}</p>
               </div>
