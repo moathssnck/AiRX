@@ -88,3 +88,54 @@
     @apply bg-background text-foreground;
   }
 }
+@layer utilities {
+  .glow-effect {
+    background: linear-gradient(135deg, rgba(255, 200, 87, 0.1), rgba(102, 153, 255, 0.1));
+    box-shadow: 0 0 30px rgba(255, 200, 87, 0.05);
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-teal-500 via-accent to-green-500 bg-clip-text text-transparent;
+    animation: gradientShift 6s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  @keyframes gradientShift {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .floating {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .shimmer {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    background-size: 200% 100%;
+    animation: shimmerAnimation 3s infinite;
+  }
+
+  @keyframes shimmerAnimation {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+}

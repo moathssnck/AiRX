@@ -39,7 +39,7 @@ export default function Header({
       <nav
         className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between ${isRTL ? "flex-row-reverse" : ""}`}
       >
-        <div className="text-2xl font-bold gradient-text">AI Solutions</div>
+        <div className="text-2xl font-bold gradient-text">AiRX </div>
 
         {/* Desktop Menu */}
         <div className={`hidden md:flex items-center gap-8 ${isRTL ? "flex-row-reverse" : ""}`}>
