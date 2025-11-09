@@ -21,7 +21,10 @@ const translations = {
   },
 }
 const trustedBy=[
-  {id:1,icon:Github}
+  {id:1,icon:Github},
+  {id:2,icon:Github},
+  {id:3,icon:Github},
+  {id:4,icon:Github},
 ]
 export default function Hero({ language }: { language: "en" | "ar" }) {
   const t = translations[language]
