@@ -1,3 +1,5 @@
+import AIProcessSVG from "./flower"
+
 export default function Benefits({ language }: { language: "en" | "ar" }) {
   const translations = {
     en: {
@@ -70,12 +72,8 @@ export default function Benefits({ language }: { language: "en" | "ar" }) {
             </ul>
           </div>
           <div className="bg-gradient-to-br from-gray-300/20 to-emerald-500/20 rounded-xl h-96 flex items-center justify-center border border-accent/20">
-            <div className="text-center">
-              <div className="text-6xl mb-4">🧠</div>
-              <p className="text-muted-foreground">
-                {language === "en" ? "Advanced AI Model" : "نموذج ذكاء اصطناعي متقدم"}
-              </p>
-            </div>
+          <AIProcessSVG/>
+          
           </div>
         </div>
       </div>

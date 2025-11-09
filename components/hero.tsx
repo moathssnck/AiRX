@@ -21,10 +21,12 @@ const translations = {
   },
 }
 const trustedBy=[
-  {id:1,icon:Github},
-  {id:2,icon:Github},
-  {id:3,icon:Github},
-  {id:4,icon:Github},
+  {id:1,icon:'/images/dropbox-color-svgrepo-com.svg'},
+  {id:2,icon:'/images/github-color-svgrepo-com.svg'},
+  {id:3,icon:'/images/google-color-svgrepo-com.svg'},
+  {id:4,icon:'/images/linkedin-color-svgrepo-com.svg'},
+  {id:5,icon:'/images/skype-color-svgrepo-com.svg'},
+  {id:6,icon:'/images/medium-color-svgrepo-com.svg'},
 ]
 export default function Hero({ language }: { language: "en" | "ar" }) {
   const t = translations[language]
@@ -73,10 +75,12 @@ export default function Hero({ language }: { language: "en" | "ar" }) {
         <div className="mt-20 pt-16 border-t border-border/30">
           <p className="text-foreground/60 text-sm mb-10 font-medium">{t.trusted_by}</p>
           <div
-            className={`grid grid-cols-2 sm:grid-cols-4 gap-8 items-center justify-items-center ${isRTL ? "flex-row-reverse" : ""}`}
+            className={`grid grid-cols-3 sm:grid-cols-6 gap-8 items-center justify-items-center ${isRTL ? "flex-row-reverse" : ""}`}
           >
             {trustedBy.map((item) => (
-              <div key={item.id} className="h-10 bg-gradient-to-r from-emerald-500/20 to-accent-400/20 rounded-lg w-10 shimmer flex justify-center items-center"></div>
+              <div key={item.id} className="h-14 w-14 grayscale hover:filter-none rounded-lg   flex justify-center items-center">
+                <img src={item.icon} alt={item.icon}/>
+              </div>
             ))}
           </div>
         </div>
