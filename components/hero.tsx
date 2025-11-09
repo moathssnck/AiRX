@@ -20,7 +20,9 @@ const translations = {
     trusted_by: "موثوق به من قبل الشركات العالمية الرائدة",
   },
 }
-
+const trustedBy=[
+  {id:1,icon:Github}
+]
 export default function Hero({ language }: { language: "en" | "ar" }) {
   const t = translations[language]
   const isRTL = language === "ar"
@@ -70,8 +72,8 @@ export default function Hero({ language }: { language: "en" | "ar" }) {
           <div
             className={`grid grid-cols-2 sm:grid-cols-4 gap-8 items-center justify-items-center ${isRTL ? "flex-row-reverse" : ""}`}
           >
-            {[<Github/>].map((item, i) => (
-              <div key={i} className="h-10 bg-gradient-to-r from-emerald-500/20 to-accent-400/20 rounded-lg w-10 shimmer flex justify-center items-center">{item}</div>
+            {trustedBy.map((item, i) => (
+              <div key={item.id} className="h-10 bg-gradient-to-r from-emerald-500/20 to-accent-400/20 rounded-lg w-10 shimmer flex justify-center items-center">{item.icon}</div>
             ))}
           </div>
         </div>
