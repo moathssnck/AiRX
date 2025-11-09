@@ -1,4 +1,4 @@
-import { Github } from "lucide-react"
+import { Github, Icon } from "lucide-react"
 
 const translations = {
   en: {
@@ -73,7 +73,7 @@ export default function Hero({ language }: { language: "en" | "ar" }) {
             className={`grid grid-cols-2 sm:grid-cols-4 gap-8 items-center justify-items-center ${isRTL ? "flex-row-reverse" : ""}`}
           >
             {trustedBy.map((item) => (
-              <div key={item.id} className="h-10 bg-gradient-to-r from-emerald-500/20 to-accent-400/20 rounded-lg w-10 shimmer flex justify-center items-center">{item.icon}</div>
+              <div key={item.id} className="h-10 bg-gradient-to-r from-emerald-500/20 to-accent-400/20 rounded-lg w-10 shimmer flex justify-center items-center"></div>
             ))}
           </div>
         </div>
